@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "id": "d4d19dfb-8708-4e63-b3ff-3b285c1c5e4e",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Element hat das chemische Symbol O?",
+          "options": ["Gold", "Sauerstoff", "Silber", "Wasserstoff"],
+          "correctIndex": 1,
+          "explanation": "Das chemische Symbol O steht für Sauerstoff."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c28d81b3-3f0d-4db0-a0b5-1ce11a1e6e8a",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Bringe die folgenden Ereignisse in die richtige zeitliche Reihenfolge (alt → neu).",
+          "items": ["Französische Revolution", "Mondlandung", "Erster Weltkrieg"],
+          "correctOrderIndices": [0, 2, 1],
+          "explanation": "1789: Französische Revolution, 1914–1918: Erster Weltkrieg, 1969: Mondlandung."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "af4d76bb-7cd5-40a4-badc-d5b17de76f71",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Nil ist der längste Fluss der Welt.",
+          "isTrue": true,
+          "explanation": "Der Nil gilt mit rund 6.650 km als längster Fluss der Welt, auch wenn der Amazonas je nach Messung konkurriert."
+        }
+      },
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+Erstelle eine JSON-Datei mit Allgemeinwissensfragen im folgenden exakten Schema (keine zusätzlichen Felder):
+{
+  "questions": [
+    {
+      "id": "UUID-v4-String",
+      "category": "string",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice" | "order" | "trueFalse",
+        "data": {}  // siehe unten je Typ
+      },
+      "version": 1
+    }
+  ]
+}
+
+Payloads:
+	•	singleChoice →
+{
+  "prompt": "string",
+  "options": ["string", "string", "..."],
+  "correctIndex": 0,
+  "explanation": "string (optional)"
+}
+
+	•	order (Reihenfolge/Drag & Drop) →
+{
+  "prompt": "string",
+  "items": ["string", "string", "..."],
+  "correctOrderIndices": [0,1,2],
+  "explanation": "string (optional)"
+}
+Regeln: correctOrderIndices ist eine Permutation aller Indizes aus items (0‑basiert, gleiche Länge).
+
+	•	trueFalse →
+{
+  "statement": "string",
+  "isTrue": true,
+  "explanation": "string (optional)"
+}
+
+Allgemeine Anforderungen:
+	1.	Erzeuge 25 Fragen: ca. 10 singleChoice, 8 order, 7 trueFalse.
+	2.	Setze locale immer auf "de-DE" und version immer auf 1.
+	3.	id muss eine echte UUID v4 sein (z. B. "3a1a8f2e-3f7b-4b6f-8a3c-1a2b3c4d5e6f").
+	4.	category: mische sinnvoll (z. B. "science", "history", "geography", "culture", "sports", "technology", "math", "arts", "politics", "general").
+	5.	Inhalte: zeitstabiles Allgemeinwissen bevorzugen. Wenn du Aktuelles verwendest, schreibe im Feld explanation einen Hinweis wie „Stand: August 2025“.
+	6.	Deutsch, klar formuliert, keine Doppeldeutigkeiten.
+	7.	Validierung sicherstellen:
+	•	Bei singleChoice: options nicht leer, correctIndex innerhalb der Options‑Indizes.
+	•	Bei order: correctOrderIndices ist Permutation von 0..<items.count.
+	•	Bei trueFalse: statement faktisch prüfbar, isTrue korrekt gesetzt.
+	8.	Keine Erklärtexte außerhalb der JSON. Gib ausschließlich die JSON aus.
+
+Gib als Antwort nur die JSON. Keine Vor‑ oder Nachbemerkungen.
