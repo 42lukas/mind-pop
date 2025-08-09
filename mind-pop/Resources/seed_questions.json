@@ -43,6 +43,21 @@
         }
       },
       "version": 1
+    },
+    {
+      "id": "af4d76bb-6gf5-40a4-badc-d5b17de76f71",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Berlin ist die Hauptstadt von Europa.",
+          "isTrue": false,
+          "explanation": "Berlin ist die Hauptstadt Deutschlands. Europa hat keine Hauptstadt, da es ein Kontinent ist."
+        }
+      },
+      "version": 1
     }
   ]
 }
+
