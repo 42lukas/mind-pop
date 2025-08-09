@@ -57,6 +57,353 @@
         }
       },
       "version": 1
+    },
+    {
+      "id": "c5b9d3df-b1c5-4c64-8b78-80cd6e1f90ac",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Kontinente gibt es auf der Erde?",
+          "options": ["5", "6", "7", "8"],
+          "correctIndex": 2,
+          "explanation": "Es gibt sieben Kontinente: Asien, Afrika, Nordamerika, Südamerika, Antarktika, Europa und Australien."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "5c3d17f1-dfa3-4d8c-8e07-f2d09f7b5b4f",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches ist das flächenmäßig größte Land der Welt?",
+          "options": ["Kanada", "Russland", "China", "USA"],
+          "correctIndex": 1,
+          "explanation": "Russland ist mit rund 17 Millionen km² das größte Land der Erde."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ac85a9a2-6315-4d73-92c3-ea0dc5e2f8f0",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche chemische Formel hat Wasser?",
+          "options": ["H2O", "O2", "CO2", "H2SO4"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f1a72878-7395-4d92-96cc-2b80a7a4f9e5",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Was ist das Ergebnis von 15 × 4?",
+          "options": ["45", "50", "60", "65"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "5bde2855-b0dd-4f71-8050-88c6b48a8b02",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wer malte die Mona Lisa?",
+          "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Vincent van Gogh"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "3279fd3d-8dcb-4ab0-a665-a8ef33b62b64",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Wort ist ein Synonym für 'rasch'?",
+          "options": ["langsam", "schnell", "träge", "gemächlich"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "57a6c635-93f2-48d4-a4fc-d8b7e8b06235",
+      "category": "politics and society",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "In welchem Jahr trat das Grundgesetz der Bundesrepublik Deutschland in Kraft?",
+          "options": ["1945", "1949", "1955", "1961"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f462e5ff-48c5-4413-9041-4a9e09c1b469",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wer gilt als Erfinder des Telefons?",
+          "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "8f7d3b0e-63d2-4f5a-a0d5-b0f76bca1c19",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Tier ist das größte lebende Tier der Erde?",
+          "options": ["Afrikanischer Elefant", "Blauwal", "Pottwal", "Giraffe"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "50cb0049-4539-4b2a-a4a8-29d6ef9f1d58",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche ist die einzige Metallart, die bei Raumtemperatur flüssig ist?",
+          "options": ["Quecksilber", "Blei", "Zinn", "Gallium"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "fb7c545c-2a76-472f-bbc1-1b829cbad0aa",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne die Epochen der Geschichte in chronologischer Reihenfolge (von alt zu neu).",
+          "items": ["Antike", "Mittelalter", "Neuzeit", "Moderne"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "70385727-5eb9-4d0d-9086-6698b9a3089f",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne die Planeten unseres Sonnensystems von der Sonne aus.",
+          "items": ["Merkur", "Venus", "Erde", "Mars", "Jupiter", "Saturn", "Uranus", "Neptun"],
+          "correctOrderIndices": [0, 1, 2, 3, 4, 5, 6, 7]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6b851b7c-2a96-44f5-83dd-6f51e6f1f9a2",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Sortiere die Zahlen nach aufsteigender Größe.",
+          "items": ["42", "7", "19", "3"],
+          "correctOrderIndices": [3, 1, 2, 0]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e8336880-4b9f-4ed6-8de2-88f6e41f6cf1",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Technologien nach ihrem Erfindungsjahr (von früh nach spät).",
+          "items": ["Dampfmaschine", "Telefon", "Internet", "Smartphone"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6d0f0483-5c5f-4d76-b6d2-612969810e74",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Musikstile nach ihrer historischen Entstehung (früh nach spät).",
+          "items": ["Klassik", "Jazz", "Rock", "Hip-Hop"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6abbe727-6a5a-4f4b-8309-989f2bfb3732",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne die folgenden Wörter alphabetisch.",
+          "items": ["Apfel", "Banane", "Kirsche", "Birne"],
+          "correctOrderIndices": [0, 1, 3, 2]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "8d2ec0aa-0e7c-4cb4-a229-7baf6fd8a5b4",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Tiere nach ihrer durchschnittlichen Lebensdauer (kurz nach lang).",
+          "items": ["Hausmaus", "Hund", "Elefant", "Grönlandwal"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "b8d48e71-00c0-4f7e-92aa-ea746b93a9ef",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Länder nach ihrer Bevölkerungszahl (Stand 2025, von gering nach hoch).",
+          "items": ["Deutschland", "USA", "Indien", "China"],
+          "correctOrderIndices": [0, 1, 3, 2],
+          "explanation": "Indien hat 2023 China überholt, Stand: August 2025."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "056725c1-0bbd-43f4-b6a3-2a059d3f2f8e",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Eiffelturm steht in Rom.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "8cb1b87d-4fcb-4b1e-9a6d-6322c086b3a6",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Amazonas ist der längste Fluss der Welt.",
+          "isTrue": false,
+          "explanation": "Der Nil gilt als längster Fluss, obwohl es Debatten gibt."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f1a98d3f-2928-4b78-86b3-3e6cfb42fd3e",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Menschen haben 46 Chromosomen.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "cc3d5c68-1db2-4a2f-9112-830b5f13f77b",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Die Zahl Pi ist eine rationale Zahl.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "8a748a14-1ee4-43c5-a67e-59cb8a4315b2",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Beethoven war ein berühmter Maler.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "004504ff-ff45-4d6c-aed4-7320d437cc8c",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Bambus gehört zu den Gräsern.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "d52a1b0b-409e-4cf0-bc1b-bf8e6a3d46c2",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Honig kann nicht verderben.",
+          "isTrue": true
+        }
+      },
+      "version": 1
     }
   ]
 }
