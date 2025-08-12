@@ -12,44 +12,69 @@ struct TrueFalseCard: View {
     let statement: String
     let isTrue: Bool
     let explanation: String?
+    let avatarURL: URL? = URL(string: "https://picsum.photos/201")
 
-    @State private var answered: Bool = false
-    @State private var wasCorrect: Bool = false
+    @State private var answered = false
+    @State private var wasCorrect = false
 
     var body: some View {
-        VStack(spacing: 20) {
-            Header(category: category)
-            Text(statement).font(.title3).bold().multilineTextAlignment(.center).padding(.horizontal)
+        CardScaffold(category: category, avatarURL: avatarURL) {
+            Text(statement)
+                .font(.title2).bold()
+                .foregroundStyle(Color.textPrimary)
 
-            HStack(spacing: 16) {
+            HStack(spacing: 14) {
                 Button {
-                    answered = true; wasCorrect = (isTrue == false)
+                    withAnimation(.spring(response: 0.25, dampingFraction: 0.85)) {
+                        answered = true; wasCorrect = (isTrue == false)
+                    }
                 } label: {
-                    Text("Falsch")
+                    Text("Falsch").bold()
+                        .foregroundStyle(Color.textPrimary)
                         .frame(maxWidth: .infinity).padding()
-                        .background(RoundedRectangle(cornerRadius: 16).fill(answered ? (isTrue ? Color.red.opacity(0.25) : Color.green.opacity(0.25)) : Color(.secondarySystemBackground)))
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(answered ? (isTrue ? Color.red.opacity(0.18) : Color.green.opacity(0.22)) : Color.brandGray.opacity(0.35))
+                        )
                 }
                 .buttonStyle(.plain)
 
                 Button {
-                    answered = true; wasCorrect = (isTrue == true)
+                    withAnimation(.spring(response: 0.25, dampingFraction: 0.85)) {
+                        answered = true; wasCorrect = (isTrue == true)
+                    }
                 } label: {
-                    Text("Wahr")
+                    Text("Wahr").bold()
+                        .foregroundStyle(Color.textPrimary)
                         .frame(maxWidth: .infinity).padding()
-                        .background(RoundedRectangle(cornerRadius: 16).fill(answered ? (isTrue ? Color.green.opacity(0.25) : Color.red.opacity(0.25)) : Color(.secondarySystemBackground)))
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(answered ? (isTrue ? Color.green.opacity(0.22) : Color.red.opacity(0.18)) : Color.brandGray.opacity(0.35))
+                        )
                 }
                 .buttonStyle(.plain)
             }
-            .padding(.horizontal)
 
             if answered {
-                Text(wasCorrect ? "Richtig ✅" : "Falsch ❌").font(.headline)
-                if let explanation { Text(explanation).font(.subheadline).foregroundStyle(.secondary).padding(.horizontal) }
+                Text(wasCorrect ? "Richtig ✅" : "Falsch ❌")
+                    .font(.headline)
+                    .foregroundStyle(Color.textPrimary)
+                if let explanation {
+                    Text(explanation)
+                        .font(.subheadline)
+                        .foregroundStyle(Color.textPrimary.opacity(0.7))
+                }
             }
-
-            Spacer(minLength: 0)
         }
-        .padding(.top, 32)
-        .background(Color(.systemBackground))
     }
+}
+
+#Preview("True/False – New") {
+    TrueFalseCard(
+        category: "History",
+        statement: "Die Berliner Mauer fiel 1989.",
+        isTrue: true,
+        explanation: "Am 9. November 1989."
+    )
+    .frame(height: 700)
 }

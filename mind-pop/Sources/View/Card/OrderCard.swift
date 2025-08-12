@@ -13,60 +13,97 @@ struct OrderCard: View {
     let items: [String]
     let correctOrderIndices: [Int]
     let explanation: String?
+    let avatarURL: URL? = URL(string: "https://picsum.photos/202")
 
-    @State private var working: [String] = []
+    var onDraggingChanged: ((Bool) -> Void)? = nil
+
+    @State private var working: [RowItem] = []
     @State private var locked = false
     @State private var isCorrect = false
+    @State private var isDragging = false { didSet { onDraggingChanged?(isDragging) } }
 
     var body: some View {
-        VStack(spacing: 16) {
-            Header(category: category)
-            Text(prompt).font(.title3).bold().multilineTextAlignment(.center).padding(.horizontal)
+        CardScaffold(category: category, avatarURL: avatarURL) {
+            Text(prompt)
+                .font(.title2).bold()
+                .foregroundStyle(Color.textPrimary)
 
-            // Reorderbare Liste (funktioniert in iOS 17 gut)
-            List {
-                ForEach(working, id: \.self) { s in
-                    Text(s).padding(.vertical, 8)
+            ReorderableVStack(items: $working) { item, dragging in
+                HStack(spacing: 12) {
+                    Text(item.title)
+                        .foregroundStyle(Color.textPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.vertical, 12)
                 }
-                .onMove { indices, newOffset in
-                    working.move(fromOffsets: indices, toOffset: newOffset)
-                }
+                .padding(.horizontal, 12)
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color.brandGray.opacity(0.35))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .stroke(dragging ? Color.accent.opacity(0.5) : Color.brandNavy.opacity(0.10), lineWidth: 1)
+                )
             }
-            .environment(\.editMode, .constant(.active)) // Drag Gripper anzeigen
-            .frame(maxHeight: 360)
-            .listStyle(.plain)
+            .simultaneousGesture(
+                DragGesture(minimumDistance: 1)
+                    .onChanged { _ in if !isDragging { isDragging = true } }
+                    .onEnded { _ in isDragging = false }
+            )
 
             Button {
-                locked = true
-                isCorrect = evaluate()
+                withAnimation {
+                    locked = true
+                    isCorrect = evaluate()
+                }
             } label: {
                 Text("Antwort prüfen").bold()
+                    .foregroundStyle(Color.textPrimary)
                     .frame(maxWidth: .infinity).padding()
-                    .background(RoundedRectangle(cornerRadius: 16).fill(Color(.secondarySystemBackground)))
-                    .padding(.horizontal)
+                    .background(
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color.brandGray.opacity(0.35))
+                    )
             }
             .disabled(locked)
 
             if locked {
-                Text(isCorrect ? "Richtig ✅" : "Falsch ❌").font(.headline)
-                if let explanation { Text(explanation).font(.subheadline).foregroundStyle(.secondary).padding(.horizontal) }
+                Text(isCorrect ? "Richtig ✅" : "Falsch ❌")
+                    .font(.headline)
+                    .foregroundStyle(Color.textPrimary)
+                if let explanation {
+                    Text(explanation)
+                        .font(.subheadline)
+                        .foregroundStyle(Color.textPrimary.opacity(0.7))
+                }
             }
-
-            Spacer(minLength: 0)
         }
-        .padding(.top, 32)
         .onAppear {
-            // Shuffle zum Start
             if working.isEmpty {
-                working = items.shuffled()
+                let base = items.enumerated().map { RowItem(id: UUID(), title: $0.element, originalIndex: $0.offset) }
+                working = base.shuffled()
             }
         }
-        .background(Color(.systemBackground))
     }
 
     private func evaluate() -> Bool {
-        // Map die aktuelle Reihenfolge auf Indizes in „items“
-        let currentIndices: [Int] = working.compactMap { items.firstIndex(of: $0) }
-        return currentIndices == correctOrderIndices
+        working.map { $0.originalIndex } == correctOrderIndices
     }
+
+    struct RowItem: Identifiable, Equatable {
+        let id: UUID
+        let title: String
+        let originalIndex: Int
+    }
+}
+
+#Preview("Order – New") {
+    OrderCard(
+        category: "History",
+        prompt: "Bringe die Ereignisse in korrekte Reihenfolge (alt → neu).",
+        items: ["Französische Revolution", "Erster Weltkrieg", "Mondlandung"],
+        correctOrderIndices: [0, 1, 2],
+        explanation: "1789 → 1914–1918 → 1969."
+    )
+    .frame(height: 700)
 }

@@ -13,52 +13,53 @@ struct SingleChoiceCard: View {
     let options: [String]
     let correctIndex: Int
     let explanation: String?
+    let avatarURL: URL? = URL(string: "https://picsum.photos/200")
 
     @State private var selected: Int? = nil
     @State private var locked = false
 
     var body: some View {
-        VStack(spacing: 16) {
-            Header(category: category)
-            Text(prompt).font(.title3).bold().multilineTextAlignment(.center).padding(.horizontal)
+        CardScaffold(category: category, avatarURL: avatarURL) {
+            Text(prompt)
+                .font(.title2).bold()
+                .foregroundStyle(Color.textPrimary)
 
-            VStack(spacing: 12) {
+            VStack {
                 ForEach(options.indices, id: \.self) { i in
                     Button {
                         guard !locked else { return }
-                        selected = i
-                        locked = true
+                        withAnimation(.spring(response: 0.25, dampingFraction: 0.85)) {
+                            selected = i; locked = true
+                        }
                     } label: {
                         HStack {
-                            Text(options[i]).multilineTextAlignment(.leading)
+                            Text(options[i]).foregroundStyle(Color.textPrimary)
                             Spacer()
-                            if locked && i == correctIndex { Image(systemName: "checkmark.circle.fill") }
-                            if locked && i == selected && i != correctIndex { Image(systemName: "xmark.circle.fill") }
+                            if locked && i == correctIndex { Image(systemName: "checkmark.circle.fill").foregroundStyle(.green) }
+                            if locked && i == selected && i != correctIndex { Image(systemName: "xmark.circle.fill").foregroundStyle(.red) }
                         }
-                        .padding()
-                        .background(RoundedRectangle(cornerRadius: 16).fill(bgColor(i)))
+                        .padding(.horizontal, 14).padding(.vertical, 12)
+                        .background(RoundedRectangle(cornerRadius: 14).fill(locked ? (i == correctIndex ? Color.green.opacity(0.2) : (i == selected ? Color.red.opacity(0.18) : Color.brandGray.opacity(0.3))) : Color.brandGray.opacity(0.35)))
+                        .overlay(RoundedRectangle(cornerRadius: 14).stroke(Color.brandNavy.opacity(0.1), lineWidth: 1))
                     }
-                    .buttonStyle(.plain)
                 }
             }
-            .padding(.horizontal)
 
             if locked {
-                Text(selected == correctIndex ? "Richtig ✅" : "Falsch ❌")
-                    .font(.headline)
-                if let explanation { Text(explanation).font(.subheadline).foregroundStyle(.secondary).padding(.horizontal) }
+                Text(selected == correctIndex ? "Richtig" : "Falsch").font(.headline).foregroundStyle(Color.textPrimary)
+                if let explanation { Text(explanation).font(.subheadline).foregroundStyle(Color.textPrimary.opacity(0.7)) }
             }
-
-            Spacer(minLength: 0)
         }
-        .padding(.top, 32)
-        .background(Color(.systemBackground))
     }
+}
 
-    private func bgColor(_ i: Int) -> Color {
-        guard locked else { return Color(.secondarySystemBackground) }
-        if i == correctIndex { return Color.green.opacity(0.25) }
-        if i == selected { return Color.red.opacity(0.25) }
-        return Color(.secondarySystemBackground)
-    }
+#Preview("SingleChoice – New") {
+    SingleChoiceCard(
+        category: "Science",
+        prompt: "Welches Element hat das chemische Symbol O?",
+        options: ["Gold", "Sauerstoff", "Silber", "Wasserstoff"],
+        correctIndex: 1,
+        explanation: "O steht für Sauerstoff."
+    )
+    .frame(height: 700)
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct QuestionCardRouter: View {
     let question: Question
+    @Binding var disablePaging: Bool
 
     var body: some View {
         switch question.body {
@@ -20,7 +21,9 @@ struct QuestionCardRouter: View {
             TrueFalseCard(category: question.category, statement: p.statement, isTrue: p.isTrue, explanation: p.explanation)
 
         case .order(let p):
-            OrderCard(category: question.category, prompt: p.prompt, items: p.items, correctOrderIndices: p.correctOrderIndices, explanation: p.explanation)
+            OrderCard(category: question.category, prompt: p.prompt, items: p.items, correctOrderIndices: p.correctOrderIndices, explanation: p.explanation) { dragging in
+                disablePaging = dragging
+              }
         }
     }
 }
