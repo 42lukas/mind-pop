@@ -751,7 +751,353 @@
         }
       },
       "version": 1
-    }
-  ]
+    },
+    {
+      "id": "f241bc1f-b8c5-46ff-a3b2-0790ef89a050",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Planeten hat unser Sonnensystem seit der Aberkennung Plutos als Planet?",
+          "options": ["7", "8", "9", "10"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f68cc4f6-0de8-48d7-bf59-cba5e621256a",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Land hat die meisten Nachbarländer?",
+          "options": ["China", "Russland", "Deutschland", "Brasilien"],
+          "correctIndex": 1,
+          "explanation": "Russland grenzt an 14 verschiedene Staaten."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "93944a12-5a31-4f3f-b44d-b6c0f41cc5de",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches ist das leichteste chemische Element?",
+          "options": ["Helium", "Wasserstoff", "Lithium", "Sauerstoff"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "90ad84b3-07cf-420c-b8ec-75efcd43c771",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viel ist 25 % von 200?",
+          "options": ["25", "40", "50", "75"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e1d2cf56-a5e3-4fbe-92c1-169f54a7d694",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Epoche ist für die Gemälde von Claude Monet bekannt?",
+          "options": ["Barock", "Renaissance", "Impressionismus", "Expressionismus"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "1c1f5d6f-45da-4c7c-a2d5-303f7f70b365",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie nennt man die Mehrzahl von 'Atlas'?",
+          "options": ["Atlanten", "Atlases", "Atlasen", "Atlasse"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c926af1b-5464-49d4-b0f2-b6f99a1623c3",
+      "category": "politics and society",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Organ ist in Deutschland für die Gesetzgebung auf Bundesebene zuständig?",
+          "options": ["Bundesrat", "Bundestag", "Bundesverfassungsgericht", "Bundesregierung"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "a32cfbc2-69c8-4df9-8a5d-dc0539e2e9d6",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Einheit wird zur Messung von elektrischer Stromstärke verwendet?",
+          "options": ["Volt", "Ampere", "Ohm", "Watt"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "9ae4781b-5d45-4e4a-b504-b41af493fbc4",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie nennt man den Prozess, bei dem Pflanzen Sonnenlicht in Energie umwandeln?",
+          "options": ["Fotosynthese", "Fermentation", "Atmung", "Gärung"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e7e8029c-6df4-4401-9ec4-fbf226e0a54c",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Farbe hat das Blut eines Hummers?",
+          "options": ["Rot", "Blau", "Grün", "Farblos"],
+          "correctIndex": 1,
+          "explanation": "Hummerblut enthält Hämocyanin, das Kupfer enthält und blau erscheint."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6db5c670-245b-49ff-a60e-96db9ec4b25a",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese deutschen Kanzler nach Amtsantritt (früh nach spät).",
+          "items": ["Konrad Adenauer", "Willy Brandt", "Helmut Kohl", "Angela Merkel"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "792be17d-6f26-4e88-a30e-1cb9f21dc0a7",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Himmelskörper nach ihrer Größe (klein nach groß).",
+          "items": ["Mond", "Merkur", "Erde", "Jupiter"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "39e47aeb-7d82-4f89-8157-2b59780a04b3",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Sortiere diese Brüche nach ihrer Größe (klein nach groß).",
+          "items": ["1/4", "1/2", "3/4", "1/1"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "5e39c11d-f51f-4651-a3a8-e71db5d4d78b",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Computereinheiten nach aufsteigender Größe.",
+          "items": ["Kilobyte", "Megabyte", "Gigabyte", "Terabyte"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "66e02cf5-29d8-4cc7-b4a4-62d53ccbbd9a",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Musikrichtungen nach ihrer historischen Entstehung (früh nach spät).",
+          "items": ["Blues", "Rock'n'Roll", "Punk", "Techno"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "900a63cd-4fc1-4186-90d7-ff897b2bcd49",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Sprichwörter alphabetisch.",
+          "items": ["Ende gut, alles gut", "Der Apfel fällt nicht weit vom Stamm", "Morgenstund hat Gold im Mund", "Aller Anfang ist schwer"],
+          "correctOrderIndices": [3, 1, 0, 2]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "3fbb1d4b-0164-4b15-b6dc-60b861d19867",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Meeresbewohner nach ihrer durchschnittlichen Größe (klein nach groß).",
+          "items": ["Seestern", "Seehund", "Hai", "Blauwal"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e1e357cc-f8b6-45f1-a2a4-ecb982d95c95",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Planeten nach ihrer Rotationsdauer (kurz nach lang).",
+          "items": ["Jupiter", "Erde", "Mars", "Venus"],
+          "correctOrderIndices": [0, 1, 2, 3],
+          "explanation": "Venus rotiert extrem langsam, eine Rotation dauert länger als ein Venusjahr."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f56dc0a0-9896-4d05-a40b-646a634e6bb1",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Atlantik ist kleiner als der Pazifik.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "eb351b6e-d587-4cc4-bf25-df94b52a18df",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Die Hauptstadt von Australien ist Sydney.",
+          "isTrue": false,
+          "explanation": "Die Hauptstadt ist Canberra."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "bca2c71f-8597-40a0-9b84-63fc53a45b7a",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Licht bewegt sich im Vakuum schneller als Schall.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "0e2f87af-29a5-4de0-8617-5808d64b87a3",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Eine Primzahl ist nur durch 1 und sich selbst teilbar.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "273db6d0-d70a-46b3-b3a2-2b6c7b6a2549",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Louvre befindet sich in Madrid.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "883f3da4-4e48-44d8-a72c-c69e1c9e0a0e",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Korallenriffe bestehen aus lebenden Organismen.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "d607f13d-9eac-4f86-903f-8c991e35ff3e",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "In Island gibt es keine McDonald's-Filialen.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    }  ]
 }
 
