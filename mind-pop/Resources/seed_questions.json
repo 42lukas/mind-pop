@@ -222,8 +222,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne die Planeten unseres Sonnensystems von der Sonne aus.",
-          "items": ["Merkur", "Venus", "Erde", "Mars", "Jupiter", "Saturn", "Uranus", "Neptun"],
-          "correctOrderIndices": [0, 1, 2, 3, 4, 5, 6, 7]
+          "items": ["Mars", "Venus", "Saturn", "Merkur", "Jupiter", "Erde", "Uranus", "Neptun"],
+          "correctOrderIndices": [3, 1, 5, 0, 4, 2, 6, 7]
         }
       },
       "version": 1
@@ -250,8 +250,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Technologien nach ihrem Erfindungsjahr (von früh nach spät).",
-          "items": ["Dampfmaschine", "Telefon", "Internet", "Smartphone"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Telefon", "Dampfmaschine", "Internet", "Smartphone"],
+          "correctOrderIndices": [1, 0, 2, 3]
         }
       },
       "version": 1
@@ -264,8 +264,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Musikstile nach ihrer historischen Entstehung (früh nach spät).",
-          "items": ["Klassik", "Jazz", "Rock", "Hip-Hop"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Hip-Hop", "Jazz", "Rock", "Klassik"],
+          "correctOrderIndices": [3, 1, 2, 0]
         }
       },
       "version": 1
@@ -292,8 +292,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Tiere nach ihrer durchschnittlichen Lebensdauer (kurz nach lang).",
-          "items": ["Hausmaus", "Hund", "Elefant", "Grönlandwal"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Hausmaus", "Hund", "Grönlandwal", "Elefant"],
+          "correctOrderIndices": [0, 1, 3, 2]
         }
       },
       "version": 1
@@ -441,8 +441,8 @@
         "type": "singleChoice",
         "data": {
           "prompt": "Welches Gas atmen Menschen hauptsächlich ein?",
-          "options": ["Kohlenstoffdioxid", "Sauerstoff", "Stickstoff", "Wasserstoff"],
-          "correctIndex": 2,
+          "options": ["Kohlenstoffdioxid", "Stickstoff", "Sauerstoff", "Wasserstoff"],
+          "correctIndex": 1,
           "explanation": "Die Luft besteht zu etwa 78 % aus Stickstoff."
         }
       },
@@ -568,8 +568,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Aggregatezustände nach steigender Energiezufuhr.",
-          "items": ["fest", "flüssig", "gasförmig", "Plasma"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Plasma", "flüssig", "gasförmig", "fest"],
+          "correctOrderIndices": [3, 1, 2, 0]
         }
       },
       "version": 1
@@ -596,8 +596,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Speichermedien nach ihrer Einführung (früh nach spät).",
-          "items": ["Diskette", "CD", "USB-Stick", "Cloud-Speicher"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["CD", "Diskette", "USB-Stick", "Cloud-Speicher"],
+          "correctOrderIndices": [1, 0, 2, 3]
         }
       },
       "version": 1
@@ -610,8 +610,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese berühmten Bauwerke nach ihrem Baujahr (früh nach spät).",
-          "items": ["Pyramiden von Gizeh", "Kolosseum", "Eiffelturm", "Burj Khalifa"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Eiffelturm", "Kolosseum", "Pyramiden von Gizeh", "Burj Khalifa"],
+          "correctOrderIndices": [2, 1, 0, 3]
         }
       },
       "version": 1
@@ -624,8 +624,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne die Silben zu einem korrekten Wort.",
-          "items": ["ten", "In", "net"],
-          "correctOrderIndices": [1, 2, 0],
+          "items": ["ter", "In", "net"],
+          "correctOrderIndices": [1, 0, 2],
           "explanation": "Das Wort lautet 'Internet'."
         }
       },
@@ -653,8 +653,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Tiere nach ihrer Höchstgeschwindigkeit (langsam nach schnell).",
-          "items": ["Schildkröte", "Mensch", "Gepard", "Falke"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Mensch", "Gepard", "Schildkröte", "Falke"],
+          "correctOrderIndices": [1, 2, 0, 3]
         }
       },
       "version": 1
@@ -902,8 +902,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese deutschen Kanzler nach Amtsantritt (früh nach spät).",
-          "items": ["Konrad Adenauer", "Willy Brandt", "Helmut Kohl", "Angela Merkel"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Konrad Adenauer", "Angela Merkel", "Helmut Kohl", "Willy Brandt"],
+          "correctOrderIndices": [0, 3, 2, 1]
         }
       },
       "version": 1
@@ -916,8 +916,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Himmelskörper nach ihrer Größe (klein nach groß).",
-          "items": ["Mond", "Merkur", "Erde", "Jupiter"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Mond", "Erde", "Merkur", "Jupiter"],
+          "correctOrderIndices": [0, 2, 1, 3]
         }
       },
       "version": 1
@@ -930,8 +930,8 @@
         "type": "order",
         "data": {
           "prompt": "Sortiere diese Brüche nach ihrer Größe (klein nach groß).",
-          "items": ["1/4", "1/2", "3/4", "1/1"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["1/1", "1/2", "3/4", "1/4"],
+          "correctOrderIndices": [3, 1, 2, 0]
         }
       },
       "version": 1
@@ -944,8 +944,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Computereinheiten nach aufsteigender Größe.",
-          "items": ["Kilobyte", "Megabyte", "Gigabyte", "Terabyte"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Gigabyte", "Megabyte", "Kilobyte", "Terabyte"],
+          "correctOrderIndices": [2, 1, 0, 3]
         }
       },
       "version": 1
@@ -958,8 +958,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Musikrichtungen nach ihrer historischen Entstehung (früh nach spät).",
-          "items": ["Blues", "Rock'n'Roll", "Punk", "Techno"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Blues", "Techno", "Punk", "Rock'n'Roll"],
+          "correctOrderIndices": [0, 3, 2, 1]
         }
       },
       "version": 1
@@ -973,7 +973,7 @@
         "data": {
           "prompt": "Ordne diese Sprichwörter alphabetisch.",
           "items": ["Ende gut, alles gut", "Der Apfel fällt nicht weit vom Stamm", "Morgenstund hat Gold im Mund", "Aller Anfang ist schwer"],
-          "correctOrderIndices": [3, 1, 0, 2]
+          "correctOrderIndices": [2, 1, 3, 0]
         }
       },
       "version": 1
@@ -986,8 +986,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Meeresbewohner nach ihrer durchschnittlichen Größe (klein nach groß).",
-          "items": ["Seestern", "Seehund", "Hai", "Blauwal"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Seestern", "Hai", "Seehund", "Blauwal"],
+          "correctOrderIndices": [0, 2, 1, 3]
         }
       },
       "version": 1
@@ -1069,6 +1069,7 @@
         "data": {
           "statement": "Der Louvre befindet sich in Madrid.",
           "isTrue": false
+          "explanation": "Der Louvre steht in Paris"
         }
       },
       "version": 1
@@ -1121,8 +1122,8 @@
         "type": "singleChoice",
         "data": {
           "prompt": "Welches Land hat die längste Küstenlinie der Welt?",
-          "options": ["Kanada", "Australien", "Indonesien", "Russland"],
-          "correctIndex": 0
+          "options": ["Russland", "Australien", "Indonesien", "Kanada"],
+          "correctIndex": 3
         }
       },
       "version": 1
@@ -1219,8 +1220,8 @@
         "type": "singleChoice",
         "data": {
           "prompt": "Welcher Baum produziert Eicheln?",
-          "options": ["Buche", "Ahorn", "Eiche", "Kiefer"],
-          "correctIndex": 2
+          "options": ["Buche", "Ahorn", "Kiefer", "Eiche"],
+          "correctIndex": 3
         }
       },
       "version": 1
@@ -1247,8 +1248,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Kriege nach ihrem Beginn (früh nach spät).",
-          "items": ["Erster Weltkrieg", "Zweiter Weltkrieg", "Kalter Krieg", "Golfkrieg"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Zweiter Weltkrieg", "Erster Weltkrieg", "Kalter Krieg", "Golfkrieg"],
+          "correctOrderIndices": [1, 0, 2, 3]
         }
       },
       "version": 1
@@ -1276,7 +1277,7 @@
         "data": {
           "prompt": "Sortiere diese Zahlen nach absteigender Größe.",
           "items": ["256", "1024", "64", "512"],
-          "correctOrderIndices": [1, 3, 0, 2]
+          "correctOrderIndices": [2, 0, 3, 1]
         }
       },
       "version": 1
@@ -1303,8 +1304,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese literarischen Werke nach Erscheinungsdatum (früh nach spät).",
-          "items": ["Die Leiden des jungen Werther", "Der Herr der Ringe", "Harry Potter", "Die Tribute von Panem"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Die Tribute von Panem", "Der Herr der Ringe", "Harry Potter", "Die Leiden des jungen Werther"],
+          "correctOrderIndices": [3, 1, 2, 0]
         }
       },
       "version": 1
@@ -1318,7 +1319,7 @@
         "data": {
           "prompt": "Setze die Wörter in die richtige Reihenfolge für einen korrekten Satz.",
           "items": ["Katze", "die", "schläft", "sofa", "auf", "dem"],
-          "correctOrderIndices": [1, 0, 2, 4, 5, 3],
+          "correctOrderIndices": [1, 0, 2, 5, 3, 4],
           "explanation": "Der Satz lautet: 'Die Katze schläft auf dem Sofa.'"
         }
       },
@@ -1332,8 +1333,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Jahreszeiten in Mitteleuropa nach ihrem Auftreten.",
-          "items": ["Frühling", "Sommer", "Herbst", "Winter"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Herbst", "Sommer", "Frühling", "Winter"],
+          "correctOrderIndices": [2, 1, 0, 3]
         }
       },
       "version": 1
@@ -1346,8 +1347,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Tiere nach ihrer Lebenserwartung (kurz nach lang).",
-          "items": ["Hauskatze", "Koi-Karpfen", "Galápagos-Schildkröte", "Grönlandhai"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Hauskatze", "Koi-Karpfen", "Grönlandhai", "Galápagos-Schildkröte"],
+          "correctOrderIndices": [0, 1, 3, 2]
         }
       },
       "version": 1
