@@ -222,8 +222,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne die Planeten unseres Sonnensystems von der Sonne aus.",
-          "items": ["Merkur", "Venus", "Erde", "Mars", "Jupiter", "Saturn", "Uranus", "Neptun"],
-          "correctOrderIndices": [0, 1, 2, 3, 4, 5, 6, 7]
+          "items": ["Mars", "Venus", "Saturn", "Merkur", "Jupiter", "Erde", "Uranus", "Neptun"],
+          "correctOrderIndices": [3, 1, 5, 0, 4, 2, 6, 7]
         }
       },
       "version": 1
@@ -250,8 +250,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Technologien nach ihrem Erfindungsjahr (von früh nach spät).",
-          "items": ["Dampfmaschine", "Telefon", "Internet", "Smartphone"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Telefon", "Dampfmaschine", "Internet", "Smartphone"],
+          "correctOrderIndices": [1, 0, 2, 3]
         }
       },
       "version": 1
@@ -264,8 +264,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Musikstile nach ihrer historischen Entstehung (früh nach spät).",
-          "items": ["Klassik", "Jazz", "Rock", "Hip-Hop"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Hip-Hop", "Jazz", "Rock", "Klassik"],
+          "correctOrderIndices": [3, 1, 2, 0]
         }
       },
       "version": 1
@@ -292,8 +292,8 @@
         "type": "order",
         "data": {
           "prompt": "Ordne diese Tiere nach ihrer durchschnittlichen Lebensdauer (kurz nach lang).",
-          "items": ["Hausmaus", "Hund", "Elefant", "Grönlandwal"],
-          "correctOrderIndices": [0, 1, 2, 3]
+          "items": ["Hausmaus", "Hund", "Grönlandwal", "Elefant"],
+          "correctOrderIndices": [0, 1, 3, 2]
         }
       },
       "version": 1
@@ -404,7 +404,1045 @@
         }
       },
       "version": 1
+    },
+    {
+      "id": "71a1d70d-b0c1-4f91-a6c1-4bbd0627a7c4",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Bundesländer hat Deutschland?",
+          "options": ["14", "15", "16", "17"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "dfeeb0f4-fd6d-4ac0-8e8e-437e37bb5c64",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welcher Ozean ist der größte der Erde?",
+          "options": ["Atlantischer Ozean", "Indischer Ozean", "Pazifischer Ozean", "Arktischer Ozean"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "a296b7dc-0e6d-4e0f-a01a-f31af270f667",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Gas atmen Menschen hauptsächlich ein?",
+          "options": ["Kohlenstoffdioxid", "Stickstoff", "Sauerstoff", "Wasserstoff"],
+          "correctIndex": 1,
+          "explanation": "Die Luft besteht zu etwa 78 % aus Stickstoff."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "85e63740-6a4f-44f8-8614-1e788e6bba72",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Was ist das Quadrat von 12?",
+          "options": ["124", "144", "164", "128"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ae1dd11b-3156-4d9b-a7c3-8c6e94d43af7",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wer schrieb das Theaterstück 'Faust'?",
+          "options": ["Friedrich Schiller", "Johann Wolfgang von Goethe", "Gotthold Ephraim Lessing", "Heinrich Heine"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "2151092b-6f15-40d2-8f10-163c189300cc",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Wort ist ein Antonym von 'kalt'?",
+          "options": ["warm", "frostig", "nass", "kühl"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "b3a26462-9fbc-43a3-83f6-20b282a28956",
+      "category": "politics and society",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Mitglieder hat der Sicherheitsrat der Vereinten Nationen?",
+          "options": ["10", "15", "20", "25"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "452ffdc4-9ee8-4931-a70f-80ff52956c4c",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Was ist die binäre Darstellung der Zahl 5?",
+          "options": ["100", "101", "110", "111"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6a8d8961-4172-49a5-a3ad-1c52bbf4e657",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Herzen hat ein Oktopus?",
+          "options": ["1", "2", "3", "4"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "aa0edbc8-9e85-4ab9-a4da-7458c3876c84",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "In welchem Land wurde das Papier erfunden?",
+          "options": ["Ägypten", "China", "Griechenland", "Indien"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "308e2db0-8d54-4b4b-8d4c-2a36529a3e6c",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese US-Präsidenten nach ihrem Amtsantritt (früh nach spät).",
+          "items": ["George Washington", "Abraham Lincoln", "Theodore Roosevelt", "John F. Kennedy"],
+          "correctOrderIndices": [0, 1, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "b8c918db-b601-47b3-a57f-899d69cbdb83",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Aggregatezustände nach steigender Energiezufuhr.",
+          "items": ["Plasma", "flüssig", "gasförmig", "fest"],
+          "correctOrderIndices": [3, 1, 2, 0]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ae3de7d7-1e6e-4dd1-a44a-74baf21ae251",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Sortiere die römischen Zahlen nach ihrem Wert (klein nach groß).",
+          "items": ["X", "V", "L", "C"],
+          "correctOrderIndices": [1, 0, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "fc739b67-13a4-41a3-bdd0-4a254e071634",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Speichermedien nach ihrer Einführung (früh nach spät).",
+          "items": ["CD", "Diskette", "USB-Stick", "Cloud-Speicher"],
+          "correctOrderIndices": [1, 0, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "da150a12-8f28-4e80-aea0-081a849cf6a3",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese berühmten Bauwerke nach ihrem Baujahr (früh nach spät).",
+          "items": ["Eiffelturm", "Kolosseum", "Pyramiden von Gizeh", "Burj Khalifa"],
+          "correctOrderIndices": [2, 1, 0, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "40e0c77a-b4bc-4f58-b7dc-cb96a3b7f6b2",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne die Silben zu einem korrekten Wort.",
+          "items": ["ter", "In", "net"],
+          "correctOrderIndices": [1, 0, 2],
+          "explanation": "Das Wort lautet 'Internet'."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c6a3a1c7-8a2a-4d89-9a28-8eb56d1d5dd0",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Baumarten nach ihrer durchschnittlichen Lebensdauer (kurz nach lang).",
+          "items": ["Birke", "Eiche", "Buche", "Mammutbaum"],
+          "correctOrderIndices": [0, 2, 1, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "bbf49628-67d2-4a6c-ae34-1b9292cb452f",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Tiere nach ihrer Höchstgeschwindigkeit (langsam nach schnell).",
+          "items": ["Mensch", "Gepard", "Schildkröte", "Falke"],
+          "correctOrderIndices": [1, 2, 0, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "91fd06b2-4da0-41d8-a648-6e4861adf4b8",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Mount Everest ist der höchste Berg der Erde.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "fe1f0aa7-49df-4c64-8266-1c0e9a576c56",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Australien ist sowohl ein Land als auch ein Kontinent.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "670c512a-01f4-40b6-a4ae-f8b084ff1875",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Elektronen sind positiv geladen.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "18f3d55a-3fa8-4aa8-8b93-fd7d2e3f9e4d",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Null ist eine gerade Zahl.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "b7484eaf-1a68-4e0c-bfbe-b1acb6cb5cb8",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Pablo Picasso war ein spanischer Maler.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ef99a7f3-21da-4964-8f7f-dbe86dcb8b2e",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Amazonas-Regenwald produziert den größten Teil des Sauerstoffs der Erde.",
+          "isTrue": false,
+          "explanation": "Ozeane produzieren den größten Teil des Sauerstoffs."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f6f6f459-2c39-44d0-b2ad-76c5a772d510",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Bananen wachsen an Bäumen.",
+          "isTrue": false,
+          "explanation": "Bananen wachsen an Stauden, nicht an Bäumen."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f241bc1f-b8c5-46ff-a3b2-0790ef89a050",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Planeten hat unser Sonnensystem seit der Aberkennung Plutos als Planet?",
+          "options": ["7", "8", "9", "10"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f68cc4f6-0de8-48d7-bf59-cba5e621256a",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Land hat die meisten Nachbarländer?",
+          "options": ["China", "Russland", "Deutschland", "Brasilien"],
+          "correctIndex": 1,
+          "explanation": "Russland grenzt an 14 verschiedene Staaten."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "93944a12-5a31-4f3f-b44d-b6c0f41cc5de",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches ist das leichteste chemische Element?",
+          "options": ["Helium", "Wasserstoff", "Lithium", "Sauerstoff"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "90ad84b3-07cf-420c-b8ec-75efcd43c771",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viel ist 25 % von 200?",
+          "options": ["25", "40", "50", "75"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e1d2cf56-a5e3-4fbe-92c1-169f54a7d694",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Epoche ist für die Gemälde von Claude Monet bekannt?",
+          "options": ["Barock", "Renaissance", "Impressionismus", "Expressionismus"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "1c1f5d6f-45da-4c7c-a2d5-303f7f70b365",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie nennt man die Mehrzahl von 'Atlas'?",
+          "options": ["Atlanten", "Atlases", "Atlasen", "Atlasse"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c926af1b-5464-49d4-b0f2-b6f99a1623c3",
+      "category": "politics and society",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Organ ist in Deutschland für die Gesetzgebung auf Bundesebene zuständig?",
+          "options": ["Bundesrat", "Bundestag", "Bundesverfassungsgericht", "Bundesregierung"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "a32cfbc2-69c8-4df9-8a5d-dc0539e2e9d6",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Einheit wird zur Messung von elektrischer Stromstärke verwendet?",
+          "options": ["Volt", "Ampere", "Ohm", "Watt"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "9ae4781b-5d45-4e4a-b504-b41af493fbc4",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie nennt man den Prozess, bei dem Pflanzen Sonnenlicht in Energie umwandeln?",
+          "options": ["Fotosynthese", "Fermentation", "Atmung", "Gärung"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e7e8029c-6df4-4401-9ec4-fbf226e0a54c",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welche Farbe hat das Blut eines Hummers?",
+          "options": ["Rot", "Blau", "Grün", "Farblos"],
+          "correctIndex": 1,
+          "explanation": "Hummerblut enthält Hämocyanin, das Kupfer enthält und blau erscheint."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6db5c670-245b-49ff-a60e-96db9ec4b25a",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese deutschen Kanzler nach Amtsantritt (früh nach spät).",
+          "items": ["Konrad Adenauer", "Angela Merkel", "Helmut Kohl", "Willy Brandt"],
+          "correctOrderIndices": [0, 3, 2, 1]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "792be17d-6f26-4e88-a30e-1cb9f21dc0a7",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Himmelskörper nach ihrer Größe (klein nach groß).",
+          "items": ["Mond", "Erde", "Merkur", "Jupiter"],
+          "correctOrderIndices": [0, 2, 1, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "39e47aeb-7d82-4f89-8157-2b59780a04b3",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Sortiere diese Brüche nach ihrer Größe (klein nach groß).",
+          "items": ["1/1", "1/2", "3/4", "1/4"],
+          "correctOrderIndices": [3, 1, 2, 0]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "5e39c11d-f51f-4651-a3a8-e71db5d4d78b",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Computereinheiten nach aufsteigender Größe.",
+          "items": ["Gigabyte", "Megabyte", "Kilobyte", "Terabyte"],
+          "correctOrderIndices": [2, 1, 0, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "66e02cf5-29d8-4cc7-b4a4-62d53ccbbd9a",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Musikrichtungen nach ihrer historischen Entstehung (früh nach spät).",
+          "items": ["Blues", "Techno", "Punk", "Rock'n'Roll"],
+          "correctOrderIndices": [0, 3, 2, 1]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "900a63cd-4fc1-4186-90d7-ff897b2bcd49",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Sprichwörter alphabetisch.",
+          "items": ["Ende gut, alles gut", "Der Apfel fällt nicht weit vom Stamm", "Morgenstund hat Gold im Mund", "Aller Anfang ist schwer"],
+          "correctOrderIndices": [2, 1, 3, 0]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "3fbb1d4b-0164-4b15-b6dc-60b861d19867",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Meeresbewohner nach ihrer durchschnittlichen Größe (klein nach groß).",
+          "items": ["Seestern", "Hai", "Seehund", "Blauwal"],
+          "correctOrderIndices": [0, 2, 1, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e1e357cc-f8b6-45f1-a2a4-ecb982d95c95",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Planeten nach ihrer Rotationsdauer (kurz nach lang).",
+          "items": ["Jupiter", "Erde", "Mars", "Venus"],
+          "correctOrderIndices": [0, 1, 2, 3],
+          "explanation": "Venus rotiert extrem langsam, eine Rotation dauert länger als ein Venusjahr."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f56dc0a0-9896-4d05-a40b-646a634e6bb1",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Atlantik ist kleiner als der Pazifik.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "eb351b6e-d587-4cc4-bf25-df94b52a18df",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Die Hauptstadt von Australien ist Sydney.",
+          "isTrue": false,
+          "explanation": "Die Hauptstadt ist Canberra."
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "bca2c71f-8597-40a0-9b84-63fc53a45b7a",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Licht bewegt sich im Vakuum schneller als Schall.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "0e2f87af-29a5-4de0-8617-5808d64b87a3",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Eine Primzahl ist nur durch 1 und sich selbst teilbar.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "273db6d0-d70a-46b3-b3a2-2b6c7b6a2549",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Louvre befindet sich in Madrid.",
+          "isTrue": false
+          "explanation": "Der Louvre steht in Paris"
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "883f3da4-4e48-44d8-a72c-c69e1c9e0a0e",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Korallenriffe bestehen aus lebenden Organismen.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "d607f13d-9eac-4f86-903f-8c991e35ff3e",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "In Island gibt es keine McDonald's-Filialen.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "2e234f8f-5472-4df7-9c46-8b413e76fdf1",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie viele Spieler hat eine Fußballmannschaft auf dem Spielfeld?",
+          "options": ["9", "10", "11", "12"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "7b2a87d5-4b0e-4f73-b7f7-076a5368e930",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Land hat die längste Küstenlinie der Welt?",
+          "options": ["Russland", "Australien", "Indonesien", "Kanada"],
+          "correctIndex": 3
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "a13c8f1d-5147-445b-98cb-58d04e2ef215",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Organ pumpt Blut durch den menschlichen Körper?",
+          "options": ["Leber", "Herz", "Lunge", "Niere"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c3c737f4-80fb-4fdb-8132-13b5a2ad9f4a",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Was ist 3 hoch 4?",
+          "options": ["12", "27", "64", "81"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c198f693-9fb7-4de4-92dd-d8e2f7d00cd5",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Instrument wird oft als 'Königin der Instrumente' bezeichnet?",
+          "options": ["Violine", "Klavier", "Orgel", "Harfe"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "9d37c42b-50a2-4d31-bc3f-40d285d102b1",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches dieser Wörter ist ein Adjektiv?",
+          "options": ["laufen", "Haus", "schön", "Freude"],
+          "correctIndex": 2
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6cda7f7e-768f-4cb8-9f62-6c0df538df86",
+      "category": "politics and society",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Wie oft findet in Deutschland die Bundestagswahl statt?",
+          "options": ["Alle 3 Jahre", "Alle 4 Jahre", "Alle 5 Jahre", "Alle 6 Jahre"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "9c4b1e93-9b9b-45a3-94da-2ac1b99209f5",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Unternehmen entwickelte das Betriebssystem Windows?",
+          "options": ["Apple", "Microsoft", "IBM", "Google"],
+          "correctIndex": 1
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f771be6a-85d8-45e6-a93f-5a98a4d87c40",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welcher Baum produziert Eicheln?",
+          "options": ["Buche", "Ahorn", "Kiefer", "Eiche"],
+          "correctIndex": 3
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "e912c45b-569f-4e44-bd06-2f4b924f1ed1",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "singleChoice",
+        "data": {
+          "prompt": "Welches Tier schläft im Durchschnitt am meisten pro Tag?",
+          "options": ["Koala", "Faultier", "Katze", "Fledermaus"],
+          "correctIndex": 0
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "820f20a4-68d1-45b1-b91b-988c7e39db34",
+      "category": "history",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Kriege nach ihrem Beginn (früh nach spät).",
+          "items": ["Zweiter Weltkrieg", "Erster Weltkrieg", "Kalter Krieg", "Golfkrieg"],
+          "correctOrderIndices": [1, 0, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "4f19cf33-9783-4b96-bc14-c234c49eac83",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne die folgenden Prozesse der Wasseraufbereitung.",
+          "items": ["Filtration", "Sedimentation", "Desinfektion", "Verteilung"],
+          "correctOrderIndices": [1, 0, 2, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "6f4c2a5a-68aa-4df4-a60a-9b1e3a26b1b0",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Sortiere diese Zahlen nach absteigender Größe.",
+          "items": ["256", "1024", "64", "512"],
+          "correctOrderIndices": [2, 0, 3, 1]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "334490b6-2a9f-4b75-aba4-e016da3da36c",
+      "category": "technology",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Technologien nach ihrer Einführung (früh nach spät).",
+          "items": ["Fernsehen", "Radio", "Smartphone", "Internet"],
+          "correctOrderIndices": [1, 0, 3, 2]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "76eb1248-2225-4e2f-b0c3-9dffb0715a73",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese literarischen Werke nach Erscheinungsdatum (früh nach spät).",
+          "items": ["Die Tribute von Panem", "Der Herr der Ringe", "Harry Potter", "Die Leiden des jungen Werther"],
+          "correctOrderIndices": [3, 1, 2, 0]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "f8a92f42-d909-4a3e-93da-02d19f0ecb3e",
+      "category": "language and grammar",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Setze die Wörter in die richtige Reihenfolge für einen korrekten Satz.",
+          "items": ["Katze", "die", "schläft", "sofa", "auf", "dem"],
+          "correctOrderIndices": [1, 0, 2, 5, 3, 4],
+          "explanation": "Der Satz lautet: 'Die Katze schläft auf dem Sofa.'"
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "71aee0b2-c3c6-4e4e-aec1-8a93a56b2375",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Jahreszeiten in Mitteleuropa nach ihrem Auftreten.",
+          "items": ["Herbst", "Sommer", "Frühling", "Winter"],
+          "correctOrderIndices": [2, 1, 0, 3]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "db1d07e4-5e47-4042-a825-48de7c66b756",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "order",
+        "data": {
+          "prompt": "Ordne diese Tiere nach ihrer Lebenserwartung (kurz nach lang).",
+          "items": ["Hauskatze", "Koi-Karpfen", "Grönlandhai", "Galápagos-Schildkröte"],
+          "correctOrderIndices": [0, 1, 3, 2]
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ca05916f-d3d5-42c3-b76a-89e0b9b56f13",
+      "category": "general knowledge",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Petersdom steht in London.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "4d49c8f5-2995-4067-99db-653502d5f3af",
+      "category": "geography",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Der Viktoriasee liegt in Afrika.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "c930c5e0-7b65-4b43-933f-4a2294bda243",
+      "category": "science",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Gold ist magnetisch.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "a1734f3b-0ff0-4e4a-982f-ea49f6dbb127",
+      "category": "math",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Die Zahl 0 ist weder positiv noch negativ.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "ad8f8f9b-2944-4635-8826-0e45283bdb16",
+      "category": "art and culture",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Shakespeare schrieb 'Romeo und Julia'.",
+          "isTrue": true
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "af012485-c00c-4b08-8039-3495e86724c4",
+      "category": "nature and environment",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Pinguine können fliegen.",
+          "isTrue": false
+        }
+      },
+      "version": 1
+    },
+    {
+      "id": "423409e3-84c4-4c44-9cf6-1a8f938a681f",
+      "category": "fun facts and curiosities",
+      "locale": "de-DE",
+      "body": {
+        "type": "trueFalse",
+        "data": {
+          "statement": "Die menschliche Nase kann mehr als eine Billion Gerüche unterscheiden.",
+          "isTrue": true
+        }
+      },
+      "version": 1
     }
-  ]
 }
 
