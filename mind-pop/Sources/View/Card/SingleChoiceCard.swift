@@ -23,6 +23,7 @@ struct SingleChoiceCard: View {
             Text(prompt)
                 .font(.title2).bold()
                 .foregroundStyle(Color.textPrimary)
+                .multilineTextAlignment(.center)
 
             VStack {
                 ForEach(options.indices, id: \.self) { i in

@@ -9,6 +9,7 @@ import SwiftUI
 
 enum CategoryBackground {
     static func imageName(for category: String) -> String {
+        print("CATEGORY MAPPING INPUT:", category)
         switch category.lowercased() {
         case "arts", "art":                 return "BackgroundArt"
         case "general", "generalknowledge": return "BackgroundGeneralKnowledge"

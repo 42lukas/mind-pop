@@ -77,12 +77,13 @@ struct SideRail: View {
                 .background(RoundedRectangle(cornerRadius: 8).fill(.ultraThinMaterial))
                 .foregroundStyle(Color.textPrimary)
             
-        }
+        }.frame(maxWidth: 80)
         .padding(.bottom, 12)
+        
     }
 }
 
 #Preview {
-    SideRail(category: "Science", avatarURL: URL(string: "https://picsum.photos/200"))
+    SideRail(category: "Science and Art Stuff", avatarURL: URL(string: "https://picsum.photos/200"))
         .background(Color.gray.opacity(0.2))
 }

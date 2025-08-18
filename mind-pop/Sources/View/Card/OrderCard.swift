@@ -27,6 +27,7 @@ struct OrderCard: View {
             Text(prompt)
                 .font(.title2).bold()
                 .foregroundStyle(Color.textPrimary)
+                .multilineTextAlignment(.center)
 
             ReorderableVStack(items: $working) { item, dragging in
                 HStack(spacing: 12) {

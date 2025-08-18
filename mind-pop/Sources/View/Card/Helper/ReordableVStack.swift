@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReorderableVStack<Item: Identifiable & Equatable, Row: View>: View where Item.ID: Hashable {
     @Binding var items: [Item]
-    let row: (Item, Bool) -> Row            // Bool = ist aktuell im Drag
+    let row: (Item, Bool) -> Row
 
     // Zustand für Drag
     @State private var draggingItem: Item?

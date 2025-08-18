@@ -22,6 +22,7 @@ struct TrueFalseCard: View {
             Text(statement)
                 .font(.title2).bold()
                 .foregroundStyle(Color.textPrimary)
+                .multilineTextAlignment(.center)
 
             HStack(spacing: 14) {
                 Button {
